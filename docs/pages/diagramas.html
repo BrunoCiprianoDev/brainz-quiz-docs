@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <meta name="author" content="Bruno Cipriano Ribeiro">
+</head>
+<style>
+    #image-area {
+        margin-top: 1em;
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    #download-button {
+        background-color: rgb(37, 202, 37);
+        padding: 0.5em;
+        margin-top: 1em;
+        color: white;
+        border-radius: 0.2em;
+        text-decoration: none;
+
+    }
+
+    #download-button img {
+        width: 1em;
+    }
+</style>
+
+<body>
+    <header>
+        <img src="../assets/icon.png">
+        <div id="header-nav">
+            <ul>
+            </ul>
+        </div>
+    </header>
+    <div id="sidebar">
+        <ul>
+            <li><a href="../index.html"><img src="../assets/home.png"><span>Início</span></span></a></li>
+            <li><a href="github.html"><img src="../assets/github.png"><span>Github</span></span></a></li>
+            <li><a href="requisitos.html"><img src="../assets/requisitos.png"><span>Requisitos</span></span></a></li>
+            <li><a href=""><img src="../assets/diagramas.png"><span>Diagramas</span></span></a></li>
+            <li><a href="tecnologias.html"><img
+                        src="../assets/project-management.png"><span>Tecnologias</span></span></a>
+            </li>
+            <li><a href="prototipagem.html"><img src="../assets/prototipagem.png"><span>Prototipagem</span></span></a>
+            </li>
+            <li><a href="historico.html"><img src="../assets/task.png"><span>Histórico</span></span></a></li>
+            <li><a href="*"><img src="../assets/deployment.png"><span>Implantação</span></span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Diagramas</h1>
+        <h2>Diagrama de classes</h2>
+        <a id="download-button" href="../documents/brainz-quiz.mdj">
+            <span>Download do arquivo class-diagram.mdj</span>
+            <img src="../assets/download-icon.png" alt="Download-img">
+        </a>
+        <div id="image-area">
+            <img src="../assets/class-diagram.png">
+        </div>
+        <hr>
+        <div id="autor-area">
+            <p>Autor: Bruno Cipriano Ribeiro</p>
+        </div>
+    </div>
+</body>
+
+</html>

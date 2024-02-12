@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <meta name="author" content="Bruno Cipriano Ribeiro">
+</head>
+
+<body>
+    <header>
+        <img src="../assets/icon.png">
+        <div id="header-nav">
+            <ul>
+            </ul>
+        </div>
+    </header>
+    <div id="sidebar">
+        <ul>
+            <li><a href="../index.html"><img src="../assets/home.png"><span>Início</span></span></a></li>
+            <li><a href=""><img src="../assets/github.png"><span>Github</span></span></a></li>
+            <li><a href="requisitos.html"><img src="../assets/requisitos.png"><span>Requisitos</span></span></a></li>
+            <li><a href="diagramas.html"><img src="../assets/diagramas.png"><span>Diagramas</span></span></a></li>
+            <li><a href="tecnologias.html"><img
+                        src="../assets/project-management.png"><span>Tecnologias</span></span></a>
+            </li>
+            <li><a href="prototipagem.html"><img src="../assets/prototipagem.png"><span>Prototipagem</span></span></a>
+            </li>
+            <li><a href="historico.html"><img src="../assets/task.png"><span>Histórico</span></span></a></li>
+            <li><a href="*"><img src="../assets/deployment.png"><span>Implantação</span></span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Github</h1>
+        <h2>Repositórios do projeto:</h2>
+        <div id="list-box">
+            <a href="https://github.com/BrunoCiprianoDev/brainz-quiz-backend">Repositório para a API</a>
+            <a href="https://github.com/BrunoCiprianoDev/brainz-quiz-mobile">Repositório para a aplicação mobile</a>
+        </div>
+        <p><span class="first-letter"></span>
+        </p>
+        <h2>Padronização</h2>
+        <p><span class="first-letter"></span>Para melhor organização e gerencimento do projeto foram estabelecidos um
+            conjunto de regras para a manuntenção dos repositórios do projeto na plataforma GitHub.
+            São elas:
+        </p>
+        <h3>1-Regra para nomenclatura de branches:</h3>
+        <p id="box-code">[tipo-de-tarefa/descrição-da-tarefa]</p>
+        <p>Exemplo: Considere uma tarefa em que uma nova feature relacionada a uma rota de usuários deverá
+            ser implementada. O nome da branch será:
+        </p>
+        <p id="box-code">feature/create-post-users-api</p>
+        <p><span>feature:</span> Indica a adição de uma nova funcionalidade.</p>
+        <p><span>fix:</span> Indica a correção de um bug.</p>
+        <p><span>docs:</span> Refere-se a alterações na documentação do projeto.</p>
+        <p><span>refactor:</span> Indica alterações no código que não adicionam uma nova funcionalidade ou corrigem um
+            bug, mas
+            melhoram a estrutura ou legibilidade.</p>
+        <p><span>test:</span> Refere-se a adições ou modificações em testes.</p>
+        <p><span>chore:</span> Geralmente usado para tarefas de manutenção, refatoração, atualização de dependências,
+            etc.</p>
+        <p><span>build:</span> Refere-se a alterações nos scripts de build ou configurações do sistema de construção.
+        </p>
+
+        <h3>2-Padronização de commits:</h3>
+        <p><span class="first-letter"></span>Siga a convenção de commits do Angular: "tipo(escopo): descrição".
+            Tipos comuns incluem feat (novos recursos), fix (correções de bugs) e outros. Exemplo:
+        </p>
+        <p id="box-code">
+            feat(posts): creating hook to integrate with posts API
+        </p>
+
+        <h3>3-Padrão de Título na Pull Request</h3>
+        <p><span class="first-letter"></span>Use um título que descreva de maneira eficiente o tipo de funcionalidade
+            que foi implementada e adicione no campo uma descrição detalhada de todas as modificações realizadas.
+        </p>
+        <p id="box-code">
+            Titulo: feat(routes): Add new routes for complaint management </br></br>
+            Descrição:</br>
+            Add New Routes for Complaint Management 🚀</br></br>
+
+            In this commit, I'm thrilled to introduce a set of new routes that enhance our complaint management
+            capabilities, providing a more comprehensive and user-friendly experience:</br>
+
+            📝 **List Complaints by Status ID:**</br>
+            - Added a route to retrieve complaints based on their status ID, aiding in status-specific analysis and
+            tracking.</br></br>
+
+            🔍 **List Complaints by CEP:**</br>
+            - Implemented a route to fetch complaints filtered by CEP, enabling localized complaint exploration.</br>
+
+            These new routes significantly expand the ways users can interact with our application, making it easier to
+            explore and manage complaints effectively.</br></br>
+
+            Please review the changes and let me know your thoughts.</br>
+        </p>
+        <hr>
+        <div id="autor-area">
+            <p>Autor: Bruno Cipriano Ribeiro</p>
+        </div>
+    </div>
+</body>
+
+</html>

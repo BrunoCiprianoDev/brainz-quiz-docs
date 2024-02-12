@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <meta name="author" content="Bruno Cipriano Ribeiro">
+</head>
+<style>
+    #image-area {
+        display: flex;
+        justify-content: center;
+        background-color: white;
+    }
+
+    #sprint-session {
+        padding: 0.5em;
+        border: 1px solid #838383;
+    }
+
+    table {
+        margin-top: 2em;
+        border-collapse: collapse;
+        width: 100%;
+        margin-bottom: 1.5em;
+    }
+
+    th,
+    td {
+        border: 1px solid #ddd;
+        padding: 8px;
+        text-align: left;
+    }
+
+    th {}
+
+    /* Defina a largura da coluna "Requisito Funcional" */
+    th.requisito-funcional {
+        width: 3em;
+    }
+
+    caption {
+        text-align: left;
+        font-weight: bold;
+        border: 1px solid #ddd;
+        background-color: #f2f2f2;
+        padding: 5px;
+        border: 1px solid #ddd;
+    }
+
+    caption span {
+        font-size: smaller;
+        float: right
+    }
+</style>
+
+<body>
+    <header>
+        <img src="../assets/icon.png">
+        <div id="header-nav">
+            <ul>
+            </ul>
+        </div>
+    </header>
+    <div id="sidebar">
+        <ul>
+            <li><a href="../index.html"><img src="../assets/home.png"><span>Início</span></span></a></li>
+            <li><a href="github.html"><img src="../assets/github.png"><span>Github</span></span></a></li>
+            <li><a href="requisitos.html"><img src="../assets/requisitos.png"><span>Requisitos</span></span></a></li>
+            <li><a href=""><img src="../assets/diagramas.png"><span>Diagramas</span></span></a></li>
+            <li><a href="tecnologias.html"><img
+                        src="../assets/project-management.png"><span>Tecnologias</span></span></a>
+            </li>
+            <li><a href="prototipagem.html"><img src="../assets/prototipagem.png"><span>Prototipagem</span></span></a>
+            </li>
+            <li><a href=""><img src="../assets/task.png"><span>Histórico</span></span></a></li>
+            <li><a href="*"><img src="../assets/deployment.png"><span>Implantação</span></span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+
+        <h1>Histórico de modificações</h1>
+        <h2>Sprint 01</h2>
+        <div id="sprint-session">
+            <p><span class="first-letter"></span>Construção da primeira versão do sistema em 10/06/2023, focado apenas nas plataformas web</p></div>
+        <table>
+            <thead>
+                <caption>Atividades</caption>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Período</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Capacitação em Node.js</td>
+                    <td>10/06/2023 - 20/10/2023</td>
+                    <td>Construção do sistema utilizando Node.js e React para plataforma web</td>
+                </tr>
+            </tbody>
+        </table>
+        <h2>Sprint 02</h2>
+        <div id="sprint-session">
+            <p><span class="first-letter"></span>Atualização do sistema para a plataforma mobile
+        </div>
+        <table>
+            <thead>
+                <caption>Atividades</caption>
+                <tr>
+                    <th>Tarefa</th>
+                    <th>Período</th>
+                    <th>Descrição</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Construção do Dashboard</td>
+                    <td>01/02/2024 - 12/02/2024</td>
+                    <td>Construção da aplicação mobile com as principais funcionalidades do sistema</td>
+                </tr>
+            </tbody>
+        </table>
+        <hr>
+        <div id="autor-area">
+            <p>Autor: Bruno Cipriano Ribeiro</p>
+        </div>
+    </div>
+</body>
+
+</html>

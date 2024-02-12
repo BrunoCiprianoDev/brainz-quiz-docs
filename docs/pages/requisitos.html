@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/sidebar.css">
+    <meta name="author" content="Bruno Cipriano Ribeiro">
+
+    <style>
+        h2 {
+            margin-bottom: 1.5em;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 100%;
+            margin-bottom: 1.5em;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {}
+
+        /* Defina a largura da coluna "Requisito Funcional" */
+        th.requisito-funcional {
+            width: 3em;
+        }
+
+        caption {
+            text-align: left;
+            font-weight: bold;
+            border: 1px solid #ddd;
+            background-color: #f2f2f2;
+            padding: 5px;
+            border: 1px solid #ddd;
+        }
+
+        caption span {
+            font-size: smaller;
+            float: right
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <img src="../assets/icon.png">
+        <div id="header-nav">
+            <ul>
+            </ul>
+        </div>
+    </header>
+    <div id="sidebar">
+        <ul>
+            <li><a href="../index.html"><img src="../assets/home.png"><span>Início</span></span></a></li>
+            <li><a href="github.html"><img src="../assets/github.png"><span>Github</span></span></a></li>
+            <li><a href=""><img src="../assets/requisitos.png"><span>Requisitos</span></span></a></li>
+            <li><a href="diagramas.html"><img src="../assets/diagramas.png"><span>Diagramas</span></span></a></li>
+            <li><a href="tecnologias.html"><img
+                        src="../assets/project-management.png"><span>Tecnologias</span></span></a>
+            </li>
+            <li><a href="prototipagem.html"><img src="../assets/prototipagem.png"><span>Prototipagem</span></span></a>
+            </li>
+            <li><a href="historico.html"><img src="../assets/task.png"><span>Histórico</span></span></a></li>
+            <li><a href="*"><img src="../assets/deployment.png"><span>Implantação</span></span></a></li>
+        </ul>
+    </div>
+    <div id="content">
+        <h1>Documentos de requisitos</h1>
+        <h2>Descrição geral do sistema</h2>
+        <h2>Requisitos funcionais do sistema [RFs]</h2>
+        <div>
+            <!-- RF01 ------------------------------------------------------------------------ -->
+            <table>
+                <thead>
+                    <caption>Cadastro de perguntas<span>Atualização: 12/10/2023</span></caption>
+                    <tr>
+                        <th class="requisito-funcional">RF</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RF01</td>
+                        <td>O sistema deve permitir o cadastro de questões com assunto, nivel de dificuldade, alternativas(respostas possiveis)</td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- RF02 ------------------------------------------------------------------------ -->
+            <table>
+                <thead>
+                    <caption>O sistema deve permitir dois tipos de cadastro de usuário: Administrador e Jogador.<span>Atualização: 12/10/2023</span></caption>
+                    <tr>
+                        <th class="requisito-funcional">RF</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RF02</td>
+                        <td>
+                            Os usuário deve ser cadastrados com: nome, email, password e regra (Administrador, Jogdor)
+                            Administrador: Capaz de adicionar novas perguntas, definir pontuações e cadastrar assuntos.
+                            Jogador: Pode responder perguntas e acumular pontuações.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- RF03 ------------------------------------------------------------------------ -->
+             <table>
+                <thead>
+                    <caption>O sistema contabilizar a pontuação dos jogadores com base nas questões que acertar<span>Atualização: 12/10/2023</span></caption>
+                    <tr>
+                        <th class="requisito-funcional">RF</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RF03</td>
+                        <td>O sistema deve calcular a pontuação das perguntas respondidas corretamente, levando em consideração o nível de dificuldade de cada questão.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- RF04 ------------------------------------------------------------------------ -->
+             <table>
+                <thead>
+                    <caption>O sistema deve fornecer feedback imediato ao usuário após responder a uma questão<span>Atualização: 12/10/2023</span></caption>
+                    <tr>
+                        <th class="requisito-funcional">RF</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RF04</td>
+                        <td>O sistema deve fornecer feedback imediato ao usuário após responder a uma questão, indicando se a resposta foi correta ou incorreta.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+              <!-- RF05 ------------------------------------------------------------------------ -->
+             <table>
+                <thead>
+                    <caption>Detalhes do perfil do usuário<span>Atualização: 12/10/2023</span></caption>
+                    <tr>
+                        <th class="requisito-funcional">RF</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RF05</td>
+                        <td>O sistema deve oferecer aos usuários a capacidade de visualizar informações pessoais, como nome, e também sua pontuação acumulada em seus perfis.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+               <!-- RF06 ------------------------------------------------------------------------ -->
+             <table>
+                <thead>
+                    <caption>Recuperação de senha<span>Atualização: 12/10/2023</span></caption>
+                    <tr>
+                        <th class="requisito-funcional">RF</th>
+                        <th>Descrição</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RF06</td>
+                        <td>O sistema deve permitir que o usuário atualize sua senha.
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+            <!-- -RNF01----------------------------------------------------------------------------- -->
+            <h2>Requisitos não funcionais</h2>
+                <h3>Requisitos não funcionais</h3>
+                <table>
+                    <thead>
+                        <caption>Plataforma principal<span>Atualização: 12/02/2024</span></caption>
+                        <tr>
+                            <th class="requisito-funcional">RNF</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RNF01</td>
+                            <td>O sistema deve ser acessível através de dispositivos móveis, garantindo uma experiência de usuário otimizada e funcionalidade completa em smartphones e tablets.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <table>
+                    <thead>
+                        <caption>Proteção dos dados<span>Atualização: 12/02/2024</span></caption>
+                        <tr>
+                            <th class="requisito-funcional">RNF</th>
+                            <th>Descrição</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>RNF02</td>
+                            <td>O sistema não deve armazenar informações sensíveis do usuário, como dados pessoais, a fim de garantir a privacidade e segurança dos usuários.
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <hr>
+            <div id="autor-area">
+                <p>Autor: Bruno Cipriano Ribeiro</p>
+            </div>
+        </div>
+</body>
+
+</html>
